@@ -4,9 +4,9 @@ dotenv.config();
 
 // Explicitly configuring Cloudinary to ensure all credentials are picked up correctly
 cloudinary.config({
-    cloud_name: 'daguhgfl9',
-    api_key: '218629249518647',
-    api_secret: 'rJQaq2oZ7vO5oYq7_veW09NX6p4',
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
     secure: true
 });
 
